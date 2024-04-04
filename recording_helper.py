@@ -2,10 +2,10 @@ import pyaudio
 import numpy as np
 import time
 
-FRAMES_PER_BUFFER = 3200
-FORMAT = pyaudio.paInt16
-CHANNELS = 1
-RATE = 16000
+FRAMES_PER_BUFFER = 3200 # number of frames per buffer 
+FORMAT = pyaudio.paInt16 # 16-bit integer format
+CHANNELS = 1 # single channel
+RATE = 16000 # 16 kHz sampling rate, 16,000 samples per second. Higher sampling rate means better quality. However, it also means more data to process.
 p = pyaudio.PyAudio()
 
 def record_audio():
@@ -18,10 +18,9 @@ def record_audio():
     )
 
     print("start recording...") 
-    # time.sleep(1)
 
     frames = []
-    seconds = 2
+    seconds = 1
     for i in range(0, int(RATE / FRAMES_PER_BUFFER * seconds)):
         data = stream.read(FRAMES_PER_BUFFER)
         frames.append(data)

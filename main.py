@@ -13,13 +13,13 @@ commands = ['down', 'go', 'left', 'no', 'right', 'stop', 'up', 'yes']
 
 loaded_model = tf.saved_model.load("saved")
 
-print(loaded_model.signatures)
+# print(loaded_model.signatures)
 
 def predict_mic():
     audio = record_audio()
     # spec = preprocess_audiobuffer(audio)
     # # spec = get_spectrogram(audio)
-    audio = tf.expand_dims(audio, 0)  # Add batch dimension
+    audio = tf.expand_dims(audio, 0)  # Add batch dimension, shape = (1, 32000)
     audio = tf.cast(audio, tf.float32)  # Convert audio to float32
     prediction = loaded_model(audio)
     prediction = prediction['predictions']

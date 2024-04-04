@@ -1,15 +1,15 @@
-import turtle
+import turtle # turtle graphics
 
-s = turtle.getscreen()
+s = turtle.getscreen() # gets the screen
 
 t = turtle.Turtle() # starts at right:
 
-size = t.turtlesize()
-increase = (2 * num for num in size)
-t.turtlesize(*increase)
+size = t.turtlesize() # default size is 1
+increase = (2 * num for num in size) # double the size
+t.turtlesize(*increase) # set the size to double
 
-t.pensize(5)
-t.shapesize()
+t.pensize(5) # set the pen size to 5
+t.shapesize() # get the size of the turtle
 t.pencolor("blue")
 
 def go_right():
@@ -79,6 +79,6 @@ def move_turtle(command):
     elif command == 'right':
         go_right()
     elif command == 'go':
-        t.forward(100)
+        t.forward(100) # 
     elif command == 'stop':
         print('Stopping the turtle')
