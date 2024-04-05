@@ -18,6 +18,7 @@ def record_audio():
     )
 
     print("start recording...") 
+    time.sleep(1)
 
     frames = []
     seconds = 1
