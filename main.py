@@ -19,7 +19,7 @@ def predict_mic():
     audio = record_audio()
     # spec = preprocess_audiobuffer(audio)
     # # spec = get_spectrogram(audio)
-    audio = tf.expand_dims(audio, 0)  # Add batch dimension, shape = (1, 32000)
+    audio = tf.expand_dims(audio, 0)  # Add batch dimension, shape = (1, 16000)
     audio = tf.cast(audio, tf.float32)  # Convert audio to float32
     prediction = loaded_model(audio)
     prediction = prediction['predictions']
