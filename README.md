@@ -12,10 +12,6 @@ python3 main.py
 
 You can view the demo video [here](https://youtu.be/knQm1O3lWrg).
 
-**Demo:**
+[![Demo Video](http://img.youtube.com/vi/knQm1O3lWrg/0.jpg)](http://www.youtube.com/watch?v=knQm1O3lWrg "Demo Video")
 
-<video width="320" height="240" controls>
-  <source src="https://youtu.be/knQm1O3lWrg" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
