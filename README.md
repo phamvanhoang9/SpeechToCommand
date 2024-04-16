@@ -11,3 +11,11 @@ python3 main.py
 **Demo:**
 
 You can view the demo video [here](https://youtu.be/knQm1O3lWrg).
+
+**Demo:**
+
+<video width="320" height="240" controls>
+  <source src="https://youtu.be/knQm1O3lWrg" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
